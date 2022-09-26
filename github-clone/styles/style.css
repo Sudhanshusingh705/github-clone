@@ -1,0 +1,126 @@
+body {
+  margin: 0px;
+  background: #f6f8fa;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+}
+
+#navbar {
+  background: #24292f;
+  padding: 15px 50px 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#navbar > div:first-child {
+  width: 90%;
+  display: flex;
+}
+
+#navbar > div:first-child > a > img {
+  margin-right: 20px;
+}
+
+#search-input {
+  font-size: 14px;
+  padding: 7px 10px;
+  background: #24292f;
+  color: #eee;
+  width: 300px;
+  border-radius: 5px;
+  border: 1px solid rgb(146, 145, 145);
+  outline: none;
+}
+
+#navbar > div:first-child > ul {
+  list-style-type: none;
+  margin: 0px;
+  margin-top: 5px;
+  padding-inline-start: 20px;
+}
+
+#navbar > div:first-child > ul > li,
+#navbar > div:first-child > ul > li > a {
+  display: inline-block;
+  color: white;
+  margin: 0px;
+  margin-right: 10px;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+#navbar > div:last-child > img {
+  border-radius: 15px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 322px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  margin-top: 2px;
+}
+
+.dropdown-content > div {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+#search-results {
+  width: 90%;
+  margin: 30px auto;
+  display: grid;
+  grid-template-columns: repeat(4, 320px);
+  column-gap: 10px;
+  row-gap: 10px;
+}
+
+#search-results > div {
+  background: white;
+  border-radius: 5px;
+  padding: 15px 15px 10px;
+}
+
+#search-results > div > img {
+  width: 30px;
+  border-radius: 15px;
+  margin-right: 10px;
+}
+
+#search-results > div > p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#search-results > div > a {
+  text-decoration: none;
+  color: #0969da;
+}
+
+.display-flex {
+  display: flex;
+}
+
+#bg-img {
+  width: 100%;
+  text-align: center;
+  margin-top: 150px;
+}
+
+#bg-img img {
+  width: 400px;
+}
